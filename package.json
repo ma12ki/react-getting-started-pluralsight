@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rimraf build",
-    "prebuild": "npm run clean",
-    "build": "webpack"
+    "serve": "babel-node src/server/app.js"
   },
   "repository": {
     "type": "git",
@@ -32,6 +30,7 @@
     "bootstrap-css-only": "^3.3.6",
     "css-loader": "^0.23.1",
     "expose-loader": "^0.7.1",
+    "express": "^4.14.0",
     "file-loader": "^0.9.0",
     "html-webpack-plugin": "^2.21.0",
     "jquery": "^3.0.0",
@@ -39,7 +38,9 @@
     "react-dom": "^15.2.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
-    "webpack": "^1.13.1"
+    "webpack": "^1.13.1",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-hot-middleware": "^2.12.0"
   },
   "devDependencies": {
     "eslint": "^3.0.0",

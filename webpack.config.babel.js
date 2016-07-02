@@ -1,3 +1,4 @@
+import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
 
@@ -10,7 +11,10 @@ const SRC_DIR_CLIENT = path.resolve(SRC_DIR, 'client');
 const SRC_DIR_APP = path.resolve(SRC_DIR_CLIENT, 'app');
 
 const config = {
-  entry: SRC_DIR_APP + '/index.jsx',
+  entry: [
+    SRC_DIR_APP + '/index.jsx',
+    'webpack-hot-middleware/client'
+  ],
   output: {
     path: BUILD_DIR_CLIENT,
     filename: 'bundle.js'
@@ -31,7 +35,10 @@ const config = {
       template: `${SRC_DIR_CLIENT}/index.html`,
       inject: 'body',
       hash: true
-    })
+    }),
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
   ]
 };
 

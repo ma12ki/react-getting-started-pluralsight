@@ -9,22 +9,26 @@ class NumbersFrame extends React.Component {
   static get propTypes() {
     return {
       selectedNumbers: React.PropTypes.array.isRequired,
-      clickNumber: React.PropTypes.func.isRequired
+      usedNumbers: React.PropTypes.array.isRequired,
+      selectNumber: React.PropTypes.func.isRequired
     };
   }
 
   render() {
     let numbers = [],
       selectedNumbers = this.props.selectedNumbers,
-      clickNumber = this.props.clickNumber;
+      usedNumbers = this.props.usedNumbers,
+      selectNumber = this.props.selectNumber;
 
     for (let i = 1; i <= 9; i++) {
       let className = 'number';
       if (selectedNumbers.includes(i)) {
         className += ' selected';
+      } else if (usedNumbers.includes(i)) {
+        className += ' used';
       }
       numbers.push(
-        <div key={i} className={className} onClick={clickNumber.bind(null, i)}>{i}</div>
+        <div key={i} className={className} onClick={selectNumber.bind(null, i)}>{i}</div>
       );
     }
 

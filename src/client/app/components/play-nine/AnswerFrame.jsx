@@ -8,14 +8,16 @@ class AnswerFrame extends React.Component {
 
   static get propTypes() {
     return {
-      selectedNumbers: React.PropTypes.array.isRequired
+      selectedNumbers: React.PropTypes.array.isRequired,
+      deselectNumber: React.PropTypes.func.isRequired
     };
   }
 
   render() {
+    let deselectNumber = this.props.deselectNumber;
     let selectedNumbers = this.props.selectedNumbers.map((number) => {
       return (
-        <div key={number} className="number">{number}</div>
+        <div key={number} className="number" onClick={deselectNumber.bind(null, number)}>{number}</div>
       );
     });
 

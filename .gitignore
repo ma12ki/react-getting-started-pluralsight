@@ -1,0 +1,12 @@
+.DS_Store
+.tmp
+.git
+.gitconfig
+.idea
+node_modules
+.settings
+*.log
+
+# sublime
+*.sublime-project
+*.sublime-workspace

@@ -1,0 +1,44 @@
+// https://github.com/lesshint/lesshint/tree/master/lib/linters
+{
+  "attributeQuotes": true,
+  "border": { "style": "none" },
+  "decimalZero": "none",
+  "depthLevel": { "depth": 1 },
+  "duplicateProperty": true,
+  "emptyRule": true,
+  "finalNewline": true,
+  "hexLength": { "style": "long" },
+  "hexNotation": { "style": "lowercase" },
+  "hexValidation": true,
+  "idSelector": true,
+  "importantRule": true,
+  "importPath": {
+    "filenameExtension": false,
+    "leadingUnderscore": false
+  },
+  "propertyOrdering": { "style": "alpha" },
+  "qualifyingElement": {
+    "allowWithAttribute": false,
+    "allowWithClass": false,
+    "allowWithId": false
+  },
+  "selectorNaming": {
+    "disallowUppercase": true,
+    "disallowUnderscore": true,
+    "disallowDash": false
+  },
+  "singleLinePerProperty": true,
+  "spaceAfterPropertyColon": { "style": "one_space" },
+  "spaceAfterPropertyName": { "style": "no_space" },
+  "spaceAfterPropertyValue": { "style": "no_space" },
+  "spaceAroundComma": { "style": "after" },
+  "spaceAroundOperator": { "style": "both" },
+  "spaceBeforeBrace": { "style": "one_space" },
+  "spaceBetweenParens": { "style": "no_space" },
+  "stringQuotes": { "style": "single" },
+  "trailingSemicolon": true,
+  "trailingWhitespace": true,
+  "urlFormat": "relative",
+  "urlQuotes": true,
+  "zeroUnit": { "style": "keep_unit" }
+}

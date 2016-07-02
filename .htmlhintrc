@@ -1,0 +1,25 @@
+// https://github.com/yaniswang/HTMLHint/wiki/Rules
+{
+  "alt-require": true,
+  "attr-lowercase": true,
+  "attr-no-duplication": true,
+  "attr-unsafe-chars": true,
+  "attr-value-double-quotes": true,
+  "attr-value-not-empty": false,
+  "doctype-first": false,
+  "doctype-html5": false,
+  "head-script-disabled": false,
+  "href-abs-or-rel": false,
+  "id-class-value": "dash",
+  "id-unique": true,
+  "inline-script-disabled": false,
+  "inline-style-disabled": true,
+  "space-tab-mixed-disabled": true,
+  "spec-char-escape": true,
+  "src-not-empty": true,
+  "style-disabled": true,
+  "tag-pair": true,
+  "tag-self-close": true,
+  "tagname-lowercase": true,
+  "title-require": false
+}

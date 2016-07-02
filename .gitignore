@@ -6,6 +6,7 @@
 node_modules
 .settings
 *.log
+build
 
 # sublime
 *.sublime-project
